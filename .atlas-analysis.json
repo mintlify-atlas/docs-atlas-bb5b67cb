@@ -1,0 +1,69 @@
+{
+  "projectType": "general",
+  "projectName": "Alex Schnell for PA-3",
+  "projectDescription": "Official grassroots campaign website for Alex Schnell's congressional run in Pennsylvania's 3rd District, built openly by the community using HTML and CSS.",
+  "theme": "almond",
+  "primaryColor": "#a8987d",
+  "lightColor": "#56413c",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "About",
+        "groups": [
+          {
+            "group": "The Candidate",
+            "pages": [
+              "introduction",
+              "why-im-running",
+              "ballot-access"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/constitutional-framework",
+              "platform/pocketbook-issues",
+              "platform/legislative-documents"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Get Involved",
+        "groups": [
+          {
+            "group": "Participate",
+            "pages": [
+              "get-involved/grassroots-model",
+              "get-involved/contributing",
+              "get-involved/campaign-updates"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "get-involved/donate",
+              "get-involved/contact"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Constitutional governance framework based on Article I, Section 8 enumerated powers",
+    "Pocketbook issues including term limits, transparency, and local campaign funding",
+    "Grassroots, community-built campaign website hosted openly on GitHub",
+    "District-verified donation system restricted to PA-3 residents",
+    "Public legislative document archive with 'Day One' bill drafts",
+    "Open contribution model with automated site integrity checks via GitHub Actions"
+  ],
+  "publicApiSurface": [
+    "Contact form via web3forms API",
+    "Donation form via PayPal with Census API district verification",
+    "Campaign updates via embedded X (Twitter) feed",
+    "PDF document viewer for legislative drafts",
+    "GitHub repository for community contributions"
+  ]
+}

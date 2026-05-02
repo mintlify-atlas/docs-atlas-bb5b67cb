@@ -1,0 +1,80 @@
+---
+title: "How to Contribute to the PA-3 Campaign Website on GitHub"
+description: "Learn how to propose wording improvements, accessibility fixes, and content updates to the Alex Schnell for PA-3 campaign website via GitHub."
+---
+
+The Alex Schnell for PA-3 campaign website is open source and hosted publicly on GitHub. It is a living document, and community contributions are a core part of how the campaign operates. Anyone can propose improvements — from fixing a typo to improving accessibility for voters with assistive technology. All suggestions are reviewed before they are accepted, maintaining both openness and accountability.
+
+## What we welcome
+
+The following types of contributions are encouraged:
+
+- **Wording improvements:** Fixing typos or making language more concise and clear.
+- **Clarifications:** Making policy points easier to understand for a general audience.
+- **Community sections:** Adding information relevant to specific PA-3 neighborhoods or local concerns.
+- **Accessibility improvements:** Enhancing alt-text, document structure, or readability for all users.
+
+## What we don't accept
+
+<Warning>
+  The following types of contributions will not be accepted and may be closed without review:
+
+  - **Partisan attacks:** Content that disparages other candidates or parties rather than promoting the campaign's values.
+  - **Unauthorized endorsements:** All endorsements must go through a formal campaign approval process.
+  - **Fundraising links:** No external links to donation tools or financial mechanisms outside official campaign channels.
+  - **Changes to core constitutional principles:** The foundational policy commitments of this campaign are not open for community editing.
+</Warning>
+
+## Technical Requirements
+
+Every pull request is checked automatically by the Site Integrity Guard workflow. To ensure your contribution passes, follow these requirements:
+
+<Steps>
+  <Step title="File organization">
+    Keep files in their correct locations. All `.html` webpage files must remain in the root directory. All CSS changes must be made within `css/style.css` — do not create new stylesheets. All images **must** be placed in the `images/` folder; no image files should sit in the root directory.
+  </Step>
+  <Step title="Naming conventions">
+    Image filenames must follow strict rules: **lowercase only** (e.g., `rally.jpg`, not `Rally.jpg`), **no spaces** (use hyphens to separate words, e.g., `community-meeting.jpg`), and **descriptive prefixes** where possible (e.g., `event-`, `loc-`, `person-`).
+  </Step>
+  <Step title="Image optimization">
+    Compress images to under 500KB before submitting. The campaign website is designed to be accessible to voters on slow mobile connections, and large image files undermine that goal.
+  </Step>
+</Steps>
+
+## Automated Checks
+
+Every pull request triggers the **Site Integrity Guard** GitHub Actions workflow, which runs three checks automatically:
+
+1. **No images in root:** Scans the root directory for `.jpg`, `.jpeg`, `.png`, `.gif`, or `.svg` files and fails if any are found outside the `images/` folder.
+2. **Lowercase and no-space naming:** Inspects every file in `/images` for uppercase letters or spaces in the filename, rejecting anything that doesn't follow the hyphenated-lowercase convention.
+3. **CSS location verification:** Confirms that `css/style.css` exists and has not been moved or deleted.
+
+If any check fails, the pull request cannot be merged until the issue is resolved.
+
+## Review Process
+
+<Steps>
+  <Step title="Fork & Branch">
+    Fork the repository and create a new branch for your suggestion. Keep branch names descriptive (e.g., `fix-typo-constitution-page`).
+  </Step>
+  <Step title="Submit PR">
+    Open a Pull Request against the main branch. The automated Site Integrity Guard will run immediately and report results.
+  </Step>
+  <Step title="Automated checks">
+    Review the workflow output. If any structural or naming check fails, update your branch to resolve the issues before requesting human review.
+  </Step>
+  <Step title="Campaign review">
+    Alex or a campaign team member will review the content for accuracy, tone, and alignment with the campaign's voice. They may suggest edits before approving.
+  </Step>
+  <Step title="Merge">
+    Once approved, your contribution is merged and becomes part of the public campaign website.
+  </Step>
+</Steps>
+
+<Card
+  title="AlexSchnellPA3 on GitHub"
+  icon="github"
+  href="https://github.com/AlexSchnellPA3/alexschnellpa3.github.io"
+>
+  View the campaign website repository, browse the full commit history, or open a pull request.
+</Card>

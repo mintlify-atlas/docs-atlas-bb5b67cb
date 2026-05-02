@@ -1,126 +1,66 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Alex Schnell for PA-3",
+  "theme": "almond",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#a8987d",
+    "light": "#56413c"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://media.brand.dev/7b7faa65-cb06-4376-97ee-80c39bbc4768.png",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/AlexSchnellPA3/alexschnellpa3.github.io"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/AlexSchnellPA3/alexschnellpa3.github.io"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "About",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "The Candidate",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "why-im-running",
+              "ballot-access"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Platform",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "platform/constitutional-framework",
+              "platform/pocketbook-issues",
+              "platform/legislative-documents"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Get Involved",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Participate",
             "pages": [
-              "api-reference/introduction"
+              "get-involved/grassroots-model",
+              "get-involved/contributing",
+              "get-involved/campaign-updates"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Support",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "get-involved/donate",
+              "get-involved/contact"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }
